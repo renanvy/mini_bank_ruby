@@ -1,0 +1,5 @@
+adapter: postgresql
+database: mini_bank_ruby
+username: Renan
+password:
+host: localhost
