@@ -9,7 +9,7 @@ puts ""
 
 puts "Efetuando saque de R$10.0....."
 
-Withdrawal.process(10.0, account)
+account.withdrawal 10
 
 puts ""
 

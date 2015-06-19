@@ -1,3 +1,3 @@
-class Deposit
+module Deposit
   
 end
