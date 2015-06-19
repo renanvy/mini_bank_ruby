@@ -3,7 +3,7 @@ require_relative '../lib/account'
 
 describe Account do
 
-  let(:account) { Account.new("Renan", "03141-7", "4939") }
+  let(:account) { Account.new("Renan", "03141-7", "4939", 100.0) }
 
   describe "#withdrawal" do
     it "discount -10 from bank account" do
