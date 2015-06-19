@@ -1,31 +1,15 @@
 class Account
-  attr_reader :cc, :agency, :balance, :person
+  attr_reader :name, :cc, :agency
+  attr_accessor :balance
 
-  def initialize(cc, agency, person, balance = 0.0)
+  def initialize(name, cc, agency)
+    @name    = name
     @cc      = cc
     @agency  = agency
-    @balance = balance
-    @person  = person
-    @balance = balance
-  end
-
-  def save
-    
-  end
-
-  def create
-    
-  end
-
-  def self.find(id)
-    
-  end
-
-  def destroy
-    
+    @balance = 100.0
   end
 
   def to_s
-    "Ag: #{@agency}, CC #{@cc}, Cliente : #{@person}"
+    "Ag: #{@agency}\nCC: #{@cc}\nCliente: #{@name}\nSaldo: #{@balance}"
   end
 end
