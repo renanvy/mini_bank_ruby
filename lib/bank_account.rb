@@ -1,7 +1,9 @@
 require_relative "withdrawal"
+require_relative "deposit"
 
-class Account
+class BankAccount
   include Withdrawal
+  include Deposit
 
   attr_reader :name, :cc, :agency
   attr_accessor :balance
