@@ -10,14 +10,14 @@ class BankAccount
   attr_reader :name, :cc, :agency
   attr_accessor :balance
 
-  def initialize(name, cc, agency, balance = 100.0)
-    @name    = name
-    @cc      = cc
-    @agency  = agency
-    @balance = balance
+  def initialize(args)
+    @name    = args[:name]
+    @cc      = args[:cc]
+    @agency  = args[:agency]
+    @balance = args[:balance]
   end
 
   def to_s
-    "Ag: #{@agency}\nCC: #{@cc}\nCliente: #{@name}\nSaldo: #{@balance}"
+    "Ag: #{agency}\nCC: #{cc}\nCliente: #{name}\nSaldo: #{balance}"
   end
 end

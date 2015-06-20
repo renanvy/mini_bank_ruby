@@ -1,8 +1,8 @@
 require_relative 'lib/bank_account'
 require_relative 'lib/withdrawal'
 
-bank_account_1 = BankAccount.new("Renan", "03141-7", "4939")
-bank_account_2 = BankAccount.new("Carlos", "03232-5", "4939")
+bank_account_1 = BankAccount.new(name: "Renan", cc: "03141-7", agency: "4939", balance: 100.0)
+bank_account_2 = BankAccount.new(name: "Carlos", cc: "03232-5", agency: "4939", balance: 100.0)
 
 puts "Conta antes de efetuar o saque:\n#{bank_account_1.to_s}"
 
